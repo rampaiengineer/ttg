@@ -1,0 +1,23 @@
+{
+  "name": "Thanjai Tech Guru - Programming Classes Thanjavur",
+  "short_name": "TTG Academy",
+  "description": "Best programming and coding classes in Thanjavur. Learn Python, Java, Full-Stack, AI with 100% placement support.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

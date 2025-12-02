@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#f97316" rx="80"/>
+  
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fef3c7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="512" height="512" fill="url(#bgGrad)" rx="80"/>
+  
+  <!-- TTG Letters -->
+  <g fill="url(#textGrad)">
+    <!-- T -->
+    <path d="M 120 140 L 240 140 L 240 180 L 200 180 L 200 350 L 160 350 L 160 180 L 120 180 Z"/>
+    
+    <!-- T -->
+    <path d="M 250 140 L 370 140 L 370 180 L 330 180 L 330 350 L 290 350 L 290 180 L 250 180 Z"/>
+    
+    <!-- G -->
+    <path d="M 380 140 Q 470 140 470 230 L 470 310 Q 470 350 430 350 L 410 350 Q 380 350 380 320 L 380 270 L 430 270 L 430 300 L 420 300 L 420 320 L 430 320 Q 440 320 440 310 L 440 230 Q 440 180 410 180 L 410 180 Q 380 180 380 210 L 380 280 Q 380 310 410 310 L 420 310 L 420 340 L 410 340 Q 350 340 350 280 L 350 210 Q 350 140 410 140 Z"/>
+  </g>
+  
+  <!-- Code Brackets -->
+  <g fill="#fbbf24" opacity="0.6">
+    <path d="M 90 380 L 70 400 L 90 420" stroke="#fbbf24" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 422 380 L 442 400 L 422 420" stroke="#fbbf24" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Dot accent -->
+  <circle cx="256" cy="440" r="12" fill="#fbbf24"/>
+</svg>
+
