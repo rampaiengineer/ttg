@@ -11,8 +11,8 @@ const slides = [
     title: "Build the Future with Generative AI",
     subtitle:
       "Master LLMs, Agents, and RAG pipelines. Move beyond ChatGPT prompts to building production-grade AI applications.",
-    cta: "Explore GenAI Course",
-    link: "/courses/genai-mastery",
+    cta: "Explore AI Courses",
+    link: "/courses?category=ai",
     icon: <Cpu className="h-6 w-6" />,
     color: "from-amber-500 to-orange-600",
     bgPattern: "bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]",
@@ -25,8 +25,8 @@ const slides = [
     title: "Become a Modern Full-Stack Engineer",
     subtitle:
       "From React & Next.js to Python & Node.js backends. Learn the complete stack demanded by top product companies.",
-    cta: "View Full-Stack Path",
-    link: "/courses/full-stack-developer",
+    cta: "View Full-Stack Courses",
+    link: "/courses?category=fullstack",
     icon: <Globe className="h-6 w-6" />,
     color: "from-blue-600 to-indigo-600",
     bgPattern: "bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] [background-size:24px_24px]",
@@ -39,8 +39,8 @@ const slides = [
     title: "Placement Support & Corporate Training",
     subtitle:
       "We don't just teach; we transform careers. Resume building, mock interviews, and corporate upskilling workshops.",
-    cta: "Book a Free Demo",
-    link: "/contact",
+    cta: "Explore All Courses",
+    link: "/courses",
     icon: <Terminal className="h-6 w-6" />,
     color: "from-emerald-500 to-teal-600",
     bgPattern: "bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]",

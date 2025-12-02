@@ -424,86 +424,87 @@ export default function Home() {
         {/* College & School Training Section */}
         <section className="relative py-12 lg:py-16">
           <div className="ttg-container">
-            <div className="rounded-3xl bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-10 lg:p-16 text-white relative overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
+            <div className="rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6 sm:p-8 md:p-10 lg:p-16 text-white relative overflow-hidden shadow-2xl border border-orange-500/20">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(249,115,22,0.15),transparent_50%)]" />
+              <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-30" />
               
-              <div className="relative grid lg:grid-cols-2 gap-10 items-center">
-                <div className="space-y-6">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 text-xs font-bold uppercase tracking-wider">
-                    <GraduationCap className="h-4 w-4" />
+              <div className="relative grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 items-center">
+                <div className="space-y-4 md:space-y-6">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-orange-500/10 backdrop-blur-sm border border-orange-500/30 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-orange-400">
+                    <GraduationCap className="h-3 w-3 md:h-4 md:w-4" />
                     For Colleges & Schools
                   </div>
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                     Free Tech Workshops for Educational Institutions
                   </h2>
-                  <p className="text-lg text-white/90 leading-relaxed">
-                    We bring cutting-edge technology training directly to your college or school campus. Our expert mentors conduct engaging, hands-on workshops on GenAI, Full-Stack Development, and AI Automation—absolutely free for educational institutions.
+                  <p className="text-base md:text-lg text-white/90 leading-relaxed">
+                    We bring cutting-edge technology training directly to your college or school campus. Our expert mentors conduct engaging, hands-on workshops—absolutely free for educational institutions.
                   </p>
                   
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <CheckCircle2 className="h-6 w-6 flex-shrink-0 mt-1" />
+                  <div className="space-y-2 md:space-y-3">
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold text-lg">One-Day Power-Packed Workshops</p>
-                        <p className="text-white/80 text-sm">Interactive sessions on latest technologies</p>
+                        <p className="font-semibold text-base md:text-lg">One-Day Workshops</p>
+                        <p className="text-white/80 text-xs md:text-sm">Interactive sessions on latest tech</p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle2 className="h-6 w-6 flex-shrink-0 mt-1" />
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold text-lg">Hands-On Learning</p>
-                        <p className="text-white/80 text-sm">Students build real projects</p>
+                        <p className="font-semibold text-base md:text-lg">Hands-On Learning</p>
+                        <p className="text-white/80 text-xs md:text-sm">Students build real projects</p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle2 className="h-6 w-6 flex-shrink-0 mt-1" />
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold text-lg">100% Free for Institutions</p>
-                        <p className="text-white/80 text-sm">Our commitment to education</p>
+                        <p className="font-semibold text-base md:text-lg">100% Free</p>
+                        <p className="text-white/80 text-xs md:text-sm">Our commitment to education</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-8 space-y-6">
-                  <h3 className="text-2xl font-bold">Workshop Topics:</h3>
-                  <div className="grid gap-4">
-                    <div className="flex items-center gap-3 p-4 rounded-xl bg-white/10">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500">
-                        <Brain className="h-6 w-6" />
+                <div className="bg-white/5 backdrop-blur-sm border-2 border-orange-500/20 rounded-2xl p-5 md:p-6 lg:p-8 space-y-4 md:space-y-6">
+                  <h3 className="text-xl md:text-2xl font-bold">Workshop Topics:</h3>
+                  <div className="grid gap-3 md:gap-4">
+                    <div className="flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-xl bg-white/5 border border-orange-500/10 hover:bg-white/10 hover:border-orange-500/30 transition-all">
+                      <div className="flex h-10 w-10 md:h-12 md:w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-orange-500 to-amber-500">
+                        <Brain className="h-5 w-5 md:h-6 md:w-6" />
                       </div>
-                      <div>
-                        <p className="font-bold">Introduction to GenAI</p>
-                        <p className="text-sm text-white/80">ChatGPT & AI Tools</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3 p-4 rounded-xl bg-white/10">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500">
-                        <Code className="h-6 w-6" />
-                      </div>
-                      <div>
-                        <p className="font-bold">Web Development</p>
-                        <p className="text-sm text-white/80">HTML, CSS, JavaScript</p>
+                      <div className="min-w-0 flex-1">
+                        <p className="font-bold text-sm md:text-base">Introduction to GenAI</p>
+                        <p className="text-xs md:text-sm text-white/80">ChatGPT & AI Tools</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3 p-4 rounded-xl bg-white/10">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500">
-                        <Terminal className="h-6 w-6" />
+                    <div className="flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-xl bg-white/5 border border-orange-500/10 hover:bg-white/10 hover:border-orange-500/30 transition-all">
+                      <div className="flex h-10 w-10 md:h-12 md:w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-orange-600 to-amber-600">
+                        <Code className="h-5 w-5 md:h-6 md:w-6" />
                       </div>
-                      <div>
-                        <p className="font-bold">Python Programming</p>
-                        <p className="text-sm text-white/80">Fundamentals & Projects</p>
+                      <div className="min-w-0 flex-1">
+                        <p className="font-bold text-sm md:text-base">Web Development</p>
+                        <p className="text-xs md:text-sm text-white/80">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-xl bg-white/5 border border-orange-500/10 hover:bg-white/10 hover:border-orange-500/30 transition-all">
+                      <div className="flex h-10 w-10 md:h-12 md:w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-orange-500">
+                        <Terminal className="h-5 w-5 md:h-6 md:w-6" />
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <p className="font-bold text-sm md:text-base">Python Programming</p>
+                        <p className="text-xs md:text-sm text-white/80">Fundamentals & Projects</p>
                       </div>
                     </div>
                   </div>
 
-                  <Link
-                    href="/corporate"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-4 text-base font-bold text-purple-600 hover:scale-105 transition-all shadow-xl"
+                  <button
+                    onClick={() => setIsFormOpen(true)}
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 px-4 md:px-6 py-3 md:py-4 text-sm md:text-base font-bold text-white hover:scale-105 transition-all shadow-xl shadow-orange-500/30"
                   >
                     Request Free Workshop
-                    <ArrowRight className="h-5 w-5" />
-                  </Link>
+                    <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
+                  </button>
                 </div>
               </div>
             </div>

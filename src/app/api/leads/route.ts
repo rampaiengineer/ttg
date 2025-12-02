@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { submitLead } from '@/lib/supabase';
 
 export async function POST(request: NextRequest) {
   try {
@@ -34,24 +34,20 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Insert into Supabase
-    const { error } = await supabase
-      .from('leads')
-      .insert([{
-        name,
-        email,
-        phone: cleanPhone,
-        message: message || null,
-        source: source || 'website',
-        course_slug: course_slug || null,
-        course_name: course_name || null,
-        created_at: new Date().toISOString()
-      }]);
+    // Submit lead through our helper function
+    const result = await submitLead({
+      name,
+      email,
+      phone: cleanPhone,
+      message: message || '',
+      source: source || 'website',
+      course_slug: course_slug,
+      course_name: course_name,
+    });
 
-    if (error) {
-      console.error('Supabase error:', error);
+    if (!result.success) {
       return NextResponse.json(
-        { success: false, error: 'Failed to save lead. Please try again.' },
+        { success: false, error: result.error || 'Failed to save lead. Please try again.' },
         { status: 500 }
       );
     }
