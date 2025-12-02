@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Header } from "@/components/Header";
@@ -47,7 +47,7 @@ const categoryGradients: Record<string, string> = {
   cloud: "from-cyan-500 to-blue-600",
 };
 
-export default function CoursesPage() {
+function CoursesContent() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -321,5 +321,24 @@ export default function CoursesPage() {
         courseSlug={selectedCourse?.slug}
       />
     </div>
+  );
+}
+
+export default function CoursesPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-b from-white via-orange-50/20 to-white">
+        <Header />
+        <div className="h-[72px]"></div>
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <div className="text-center">
+            <div className="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-orange-500 border-r-transparent"></div>
+            <p className="mt-4 text-slate-600">Loading courses...</p>
+          </div>
+        </div>
+      </div>
+    }>
+      <CoursesContent />
+    </Suspense>
   );
 }
