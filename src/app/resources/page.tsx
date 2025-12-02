@@ -16,8 +16,9 @@ import {
   Code,
   Zap
 } from "lucide-react";
+import { ReactElement } from "react";
 
-const categoryIcons: Record<string, JSX.Element> = {
+const categoryIcons: Record<string, ReactElement> = {
   "Generative AI": <Brain className="h-5 w-5" />,
   "Full-Stack Development": <Code className="h-5 w-5" />,
   "AI Automation": <Zap className="h-5 w-5" />,

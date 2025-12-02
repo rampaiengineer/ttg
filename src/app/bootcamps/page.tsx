@@ -48,12 +48,12 @@ const bootcamps = [
       "Deploy AI applications to production",
     ],
     curriculum: [
-      { week: "1-2", topic: "Python & AI Fundamentals", details: "Environment setup, Python for AI, API fundamentals" },
-      { week: "3-4", topic: "LangChain & LLMs", details: "OpenAI API, LangChain basics, prompt engineering" },
-      { week: "5-6", topic: "RAG Systems", details: "Vector databases, embeddings, semantic search" },
-      { week: "7-8", topic: "AI Agents & Tools", details: "Multi-agent systems, tool calling, function calling" },
-      { week: "9-10", topic: "Production AI Apps", details: "Deployment, monitoring, optimization" },
-      { week: "11-12", topic: "Capstone Project", details: "Build and deploy your own GenAI product" },
+      { week: "1-2", topic: "Python & AI Fundamentals", details: "Environment setup, Python for AI, API fundamentals" } as const,
+      { week: "3-4", topic: "LangChain & LLMs", details: "OpenAI API, LangChain basics, prompt engineering" } as const,
+      { week: "5-6", topic: "RAG Systems", details: "Vector databases, embeddings, semantic search" } as const,
+      { week: "7-8", topic: "AI Agents & Tools", details: "Multi-agent systems, tool calling, function calling" } as const,
+      { week: "9-10", topic: "Production AI Apps", details: "Deployment, monitoring, optimization" } as const,
+      { week: "11-12", topic: "Capstone Project", details: "Build and deploy your own GenAI product" } as const,
     ],
     batchInfo: {
       nextBatch: "January 15, 2025",
@@ -87,12 +87,12 @@ const bootcamps = [
       "Interview preparation and mock tests",
     ],
     curriculum: [
-      { week: "1-2", topic: "HTML, CSS & JavaScript", details: "Modern JS, ES6+, DOM manipulation, responsive design" },
-      { week: "3-4", topic: "React & State Management", details: "Components, hooks, context API, Redux" },
-      { week: "5-6", topic: "Next.js & SSR", details: "Server components, routing, API routes" },
-      { week: "7-8", topic: "Node.js & Express", details: "REST APIs, middleware, authentication" },
-      { week: "9-10", topic: "MongoDB & Databases", details: "CRUD operations, aggregation, relationships" },
-      { week: "11-12", topic: "Capstone Project", details: "Full-stack e-commerce or SaaS application" },
+      { week: "1-2", topic: "HTML, CSS & JavaScript", details: "Modern JS, ES6+, DOM manipulation, responsive design" } as const,
+      { week: "3-4", topic: "React & State Management", details: "Components, hooks, context API, Redux" } as const,
+      { week: "5-6", topic: "Next.js & SSR", details: "Server components, routing, API routes" } as const,
+      { week: "7-8", topic: "Node.js & Express", details: "REST APIs, middleware, authentication" } as const,
+      { week: "9-10", topic: "MongoDB & Databases", details: "CRUD operations, aggregation, relationships" } as const,
+      { week: "11-12", topic: "Capstone Project", details: "Full-stack e-commerce or SaaS application" } as const,
     ],
     batchInfo: {
       nextBatch: "January 20, 2025",
@@ -126,11 +126,11 @@ const bootcamps = [
       "Certificate of completion",
     ],
     curriculum: [
-      { topic: "React Workshop", details: "Build modern web apps in 2 weekends" },
-      { topic: "Python for Data Science", details: "NumPy, Pandas, data visualization" },
-      { topic: "API Development with Node.js", details: "RESTful APIs from scratch" },
-      { topic: "AI Prompt Engineering", details: "Master ChatGPT and AI tools" },
-      { topic: "Git & GitHub Mastery", details: "Version control for developers" },
+      { week: "", topic: "React Workshop", details: "Build modern web apps in 2 weekends" } as const,
+      { week: "", topic: "Python for Data Science", details: "NumPy, Pandas, data visualization" } as const,
+      { week: "", topic: "API Development with Node.js", details: "RESTful APIs from scratch" } as const,
+      { week: "", topic: "AI Prompt Engineering", details: "Master ChatGPT and AI tools" } as const,
+      { week: "", topic: "Git & GitHub Mastery", details: "Version control for developers" } as const,
     ],
     batchInfo: {
       nextBatch: "Rolling batches",
@@ -314,11 +314,11 @@ export default function BootcampsPage() {
                           {bootcamp.curriculum.map((item, idx) => (
                             <div key={idx} className="flex items-start gap-3 p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors">
                               <div className="flex-shrink-0 w-16 text-xs font-bold text-orange-600">
-                                {item.week || item.topic}
+                                {item.week || `#${idx + 1}`}
                               </div>
                               <div className="flex-1">
-                                <p className="text-sm font-semibold text-slate-900">{item.topic || item.details}</p>
-                                {item.details && item.week && (
+                                <p className="text-sm font-semibold text-slate-900">{item.topic}</p>
+                                {item.details && (
                                   <p className="text-xs text-slate-600 mt-1">{item.details}</p>
                                 )}
                               </div>
